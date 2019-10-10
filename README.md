@@ -1,5 +1,8 @@
 # How to Use Thrift
 
+## Purpose
+This repository is designed to make source codes based on a general IDL file, ./gen/messenger.thrift. 
+
 ## Prerequisite
 Thfit should  be installed on your machine
 - Windows: use vcpkg
@@ -18,13 +21,13 @@ $ thrift -r --gen java messenger.thrift
 $ thrift -r --gen py messenger.thrift
 ```
 
-## Copy generated files to a source folder
+## Copy generated files to the specific folder to use them as source in c++ environment. I am using the thrift-cpp folder as a source, so some .cpp and .h files exist on this folder. 
 ```
 $ cp ./gen-cpp/* ../
 ```
 
 ## Change folder name
-gen-<language>-<version>
+gen-(language)-(version)
 ```
 $ mv gen-cpp gen-cpp-0.12.0
 ```
