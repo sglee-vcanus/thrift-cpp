@@ -21,10 +21,11 @@ $ thrift -r --gen java messenger.thrift
 $ thrift -r --gen py messenger.thrift
 ```
 
-## Copy generated files to the specific folder to use them as source in c++ environment. I am using the thrift-cpp folder as a source, so some .cpp and .h files exist on this folder. 
+## Copy generated files to the specific folder to use them as source in c++ environment. 
 ```
-$ cp ./gen-cpp/* ../
+$ cp ./gen-cpp/* ../../../inclue/thrift/
 ```
+or you can use cp_genfiles.sh
 
 ## Change folder name
 gen-(language)-(version)
